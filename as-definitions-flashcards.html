@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>AS Economics (9708) 必背定义 · Flashcard</title>
+<style>
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --surface-2:#e9eef4; --ink:#1c2733; --ink-soft:#5b6b7b;
+  --line:#dbe1e8; --navy:#1f3a5f; --navy-ink:#ffffff; --accent:#2e7d32; --accent-soft:#e5f2e6;
+  --warn-ink:#9a3b2e; --warn-soft:#fbeae6; --chip-ink:#1f3a5f;
+  --shadow:0 1px 3px rgba(20,40,70,.08),0 8px 24px rgba(20,40,70,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#10161d; --surface:#1a232e; --surface-2:#24303d; --ink:#e8edf2; --ink-soft:#9fb0c1;
+    --line:#2e3c4b; --navy:#7fa8d9; --navy-ink:#0f1a28; --accent:#7bc47f; --accent-soft:#1d2f22;
+    --warn-ink:#f0a294; --warn-soft:#33211d; --chip-ink:#bcd2ea;
+    --shadow:0 1px 3px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.25);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Arial,sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:#1f3a5f;color:#fff;padding:26px 20px 20px}
+@media (prefers-color-scheme: dark){ header{background:#16283f} }
+header .hwrap{max-width:920px;margin:0 auto}
+header h1{margin:0 0 6px;font-size:24px;line-height:1.3;letter-spacing:.2px}
+header p{margin:0;opacity:.88;font-size:14px}
+header .stats{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+header .stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:6px 12px;font-size:13px}
+header .stat b{font-size:16px;margin-right:4px}
+.toolbar{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);padding:12px 16px;box-shadow:0 2px 10px rgba(20,40,70,.05)}
+.toolbar .trow{max-width:920px;margin:0 auto;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.toolbar input[type=text]{flex:1 1 220px;min-width:0;padding:11px 14px;font-size:16px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.toolbar input[type=text]:focus{outline:2px solid var(--navy);outline-offset:1px}
+.toolbar select{padding:11px 10px;font-size:15px;border:1px solid var(--line);border-radius:10px;max-width:100%;background:var(--bg);color:var(--ink)}
+.modes{display:flex;gap:8px}
+.modebtn{padding:11px 18px;border:0;border-radius:999px;font-size:15px;font-weight:600;cursor:pointer;background:var(--surface-2);color:var(--chip-ink);min-height:44px}
+.modebtn.active{background:#1f3a5f;color:#fff}
+@media (prefers-color-scheme: dark){ .modebtn.active{background:#7fa8d9;color:#0f1a28} }
+.wrap{max-width:920px;margin:0 auto;padding:16px 16px 48px}
+.aotabs{display:flex;gap:6px;margin:2px 0 18px;background:var(--surface-2);border-radius:12px;padding:5px}
+.aotab{flex:1 1 0;padding:12px 10px;border:0;border-radius:8px;background:transparent;color:var(--ink-soft);font-size:16px;font-weight:700;letter-spacing:.4px;cursor:pointer;min-height:48px}
+.aotab.active{background:#1f3a5f;color:#fff;box-shadow:var(--shadow)}
+@media (prefers-color-scheme: dark){ .aotab.active{background:#7fa8d9;color:#0f1a28} }
+.sec h2{font-size:18px;border-left:5px solid #1f3a5f;padding-left:11px;margin:28px 0 12px;line-height:1.4}
+@media (prefers-color-scheme: dark){ .sec h2{border-left-color:#7fa8d9} }
+.sec h2 .cnt{color:var(--ink-soft);font-weight:400;font-size:14px}
+.grouphead{font-size:15px;font-weight:700;color:var(--navy);margin:18px 0 9px;padding:7px 12px;background:var(--surface-2);border-radius:8px;line-height:1.45}
+@media (prefers-color-scheme: dark){ .grouphead{color:var(--chip-ink)} }
+ul.bullets{margin:7px 0 2px;padding-left:20px;font-size:15.5px}
+ul.bullets li{margin:0 0 6px}
+ul.bullets li:last-child{margin-bottom:0}
+ul.fcbullets{margin:4px 0 0;padding-left:22px;font-size:16px;text-align:left;line-height:1.7}
+ul.fcbullets li{margin:0 0 8px}
+ul.fcbullets li:last-child{margin-bottom:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin:0 0 10px;cursor:pointer;box-shadow:var(--shadow)}
+.card:active{transform:scale(.995)}
+.card .term{font-weight:700;font-size:16.5px;line-height:1.45}
+.card .ch{font-size:12px;color:var(--ink-soft);margin-bottom:3px}
+.card .def{margin-top:7px;font-size:15.5px}
+.card.hidden-def .def{display:none}
+.card .hint{font-size:12.5px;color:var(--navy);margin-top:7px;font-weight:600}
+.quiz{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0;align-items:center}
+.quiz button{padding:10px 15px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:14.5px;min-height:44px;font-weight:600}
+.quiz button.primary{background:#1f3a5f;color:#fff;border-color:#1f3a5f}
+.quiz button.known-btn{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.quiz button.unknown-btn{background:var(--warn-soft);border-color:transparent;color:var(--warn-ink)}
+@media (prefers-color-scheme: dark){ .quiz button.primary{background:#7fa8d9;color:#0f1a28;border-color:#7fa8d9} }
+.quiz label{font-size:14.5px;display:inline-flex;align-items:center;gap:7px;min-height:44px;cursor:pointer}
+.quiz input[type=checkbox]{width:19px;height:19px;accent-color:#1f3a5f}
+.fc{background:var(--surface);border:1px solid var(--line);border-radius:18px;min-height:260px;padding:30px 24px;text-align:center;cursor:pointer;display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow);user-select:none;-webkit-tap-highlight-color:transparent}
+.fc .side{font-size:12.5px;color:var(--ink-soft);letter-spacing:1.2px;font-weight:600}
+.fc .term{font-size:27px;font-weight:700;margin:16px 0 6px;line-height:1.35}
+.fc .def{font-size:17px;text-align:left;line-height:1.7}
+.fc .tap-hint{font-size:13px;color:var(--ink-soft);margin-top:14px}
+.progress{height:10px;background:var(--surface-2);border-radius:5px;overflow:hidden;margin:14px 0 10px}
+.progress div{height:100%;background:var(--accent);width:0%;transition:width .3s ease}
+.meta{text-align:center;color:var(--ink-soft);font-size:14px}
+.nores{color:var(--ink-soft);text-align:center;padding:44px 16px;font-size:15px}
+.result-line{color:var(--ink-soft);font-size:14px;margin:2px 0 6px}
+footer{max-width:920px;margin:0 auto;padding:0 16px 34px;color:var(--ink-soft);font-size:13px}
+@media (max-width:560px){
+  header{padding:22px 16px 18px} header h1{font-size:21px}
+  .fc{min-height:300px;padding:26px 18px}
+  .fc .term{font-size:24px}
+  .quiz button{flex:1 1 auto}
+}
+.diag-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:2px 0 16px}
+.diag-toolbar .spacer{flex:1 1 auto}
+button.addiag{padding:11px 18px;border:0;border-radius:10px;background:#1f3a5f;color:#fff;font-size:15px;font-weight:700;cursor:pointer;min-height:46px}
+@media (prefers-color-scheme: dark){ button.addiag{background:#7fa8d9;color:#0f1a28} }
+.diagform{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 17px;margin:0 0 14px;box-shadow:var(--shadow)}
+.diagform label{display:block;font-size:14px;font-weight:600;margin:10px 0 5px}
+.diagform label:first-child{margin-top:0}
+.diagform input[type=text],.diagform textarea{width:100%;padding:10px 12px;font-size:15px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit}
+.diagform textarea{min-height:96px;resize:vertical;line-height:1.55}
+.diagform input[type=file]{font-size:14px;color:var(--ink);max-width:100%}
+.diagform select{width:100%;padding:10px 12px;font-size:15px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit}
+.warnbar{background:#fff3cd;border:1px solid #e0b800;color:#5c4a00;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:14px;line-height:1.5}
+.diagform .frow{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.diagform button{padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:14.5px;min-height:44px;font-weight:600}
+.diagform button.primary{background:#1f3a5f;color:#fff;border-color:#1f3a5f}
+.diagform button.danger{background:var(--warn-soft);border-color:transparent;color:var(--warn-ink)}
+@media (prefers-color-scheme: dark){ .diagform button.primary{background:#7fa8d9;color:#0f1a28;border-color:#7fa8d9} }
+.diagform .note{font-size:13px;color:var(--ink-soft);margin-top:10px}
+.teachergate{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 17px;margin:0 0 14px;box-shadow:var(--shadow)}
+.teachergate label{display:block;font-size:14px;font-weight:600;margin:0 0 6px}
+.teachergate .grow{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.teachergate input[type=password]{flex:1 1 200px;min-width:0;padding:10px 12px;font-size:15px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font-family:inherit}
+.teachergate button{padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;font-size:14.5px;min-height:44px;font-weight:600}
+.teachergate button.primary{background:#1f3a5f;color:#fff;border-color:#1f3a5f}
+@media (prefers-color-scheme: dark){ .teachergate button.primary{background:#7fa8d9;color:#0f1a28;border-color:#7fa8d9} }
+.teachergate .gmsg{display:none;margin-top:10px;background:var(--warn-soft);color:var(--warn-ink);border-radius:8px;padding:8px 12px;font-size:14px;font-weight:600}
+.diag-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 14px;box-shadow:var(--shadow)}
+.diag-head{display:flex;align-items:flex-start;gap:10px}
+.diag-head h3{margin:0;font-size:18px;line-height:1.4;flex:1 1 auto}
+button.diag-del{flex:0 0 auto;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--warn-soft);color:var(--warn-ink);cursor:pointer;font-size:13.5px;font-weight:700;min-height:36px}
+.card .editbtn{float:right;padding:5px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface-2);color:var(--chip-ink);cursor:pointer;font-size:12.5px;font-weight:700;min-height:32px}
+.edited-tag{font-size:11.5px;font-weight:700;color:var(--accent);background:var(--accent-soft);border-radius:6px;padding:2px 7px;margin-left:6px;vertical-align:middle}
+.diag-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:18px;margin-top:12px;align-items:start}
+.diag-fig{margin:0}
+.diag-fig svg{width:100%;height:auto;display:block}
+.diag-fig img{width:100%;height:auto;display:block;border-radius:8px}
+.diag-card ul.bullets{font-size:15.5px;margin-top:2px}
+@media (max-width:640px){ .diag-grid{grid-template-columns:1fr} }
+@media print{.toolbar,.quiz,.aotabs,footer,.diag-toolbar,.diagform,.teachergate,button.diag-del,.card .editbtn{display:none!important} .card.hidden-def .def{display:block!important} body{background:#fff}}
+@media (prefers-reduced-motion: reduce){ .progress div{transition:none} .card:active{transform:none} }
+</style>
+</head>
+<body>
+<header>
+<div class="hwrap">
+<h1>AS Economics (9708) · 必背定义</h1>
+<div class="stats"><span class="stat"><b id="statCh">24</b>章</span><span class="stat"><b id="statDef">129</b>条定义</span><span class="stat"><b>2</b>种模式：列表 / 卡片</span></div>
+</div>
+</header>
+<div class="toolbar">
+<div class="trow">
+<input id="q" type="text" placeholder="搜索术语或定义，例如 PED、inflation…" aria-label="搜索术语或定义">
+<select id="chsel" aria-label="按章节筛选"><option value="">全部章节</option></select>
+<span class="modes">
+<button class="modebtn active" id="btnList">📖 列表模式</button>
+<button class="modebtn" id="btnCard">🃏 卡片模式</button>
+</span>
+<button class="modebtn" id="dlBtn" type="button" title="下载包含你修改后的定义的 HTML 文件，上传到你的网站">⬇ 导出 HTML</button>
+<button class="modebtn" id="openBtn" type="button" title="在新窗口打开包含你修改的页面，再用浏览器的保存功能存下来">在新窗口打开</button>
+<button class="modebtn" id="shareBtn" type="button" style="display:none" title="用系统分享把文件存下来">分享文件</button>
+<button class="modebtn" id="restoreBtn" type="button" title="恢复所有已删除的定义">↺ 恢复已删</button>
+<button class="modebtn" id="addDefBtn" type="button" title="添加一条新定义">＋ 添加定义</button>
+</div>
+</div>
+<div class="warnbar" id="storageWarn" style="display:none">⚠ 这个浏览器没有保存你的修改：请把文件存到电脑上，用 Safari 或 Chrome 打开再编辑；改完点工具栏「在新窗口打开」保存。</div>
+<div class="wrap">
+<div class="aotabs" role="tablist" aria-label="AO1 / AO2 切换">
+<button class="aotab active" id="tabAO1" role="tab" aria-selected="true">AO1</button>
+<button class="aotab" id="tabAO2" role="tab" aria-selected="false">AO2</button>
+<button class="aotab" id="tabDiagram" role="tab" aria-selected="false">Diagram</button>
+</div>
+<div id="listView"></div>
+<div class="diagform" id="editForm" style="display:none">
+<label id="efTitle">编辑定义 Edit definition</label>
+<label for="efTerm">标题 Title</label>
+<input type="text" id="efTerm">
+<label for="efText">定义 Definition</label>
+<textarea id="efText"></textarea>
+<div class="frow">
+<button class="primary" id="efSave" type="button">保存 Save</button>
+<button id="efCancel" type="button">取消 Cancel</button>
+<button class="danger" id="efDelete" type="button">删除 Delete</button>
+</div>
+<div class="note">多条要点请一行写一条；清空后保存会恢复原文。删除后可以点工具栏「↺ 恢复已删」找回来。保存或删除后只在你自己的浏览器里生效，点工具栏「⬇ 导出 HTML」下载新文件，上传到你的网站后学生才能看到。</div>
+</div>
+<div class="diagform" id="addForm" style="display:none">
+<label>添加定义 Add definition</label>
+<label for="afAO">分类 AO</label>
+<select id="afAO"><option value="AO1">AO1</option><option value="AO2">AO2</option></select>
+<label for="afCh">章节 Chapter</label>
+<select id="afCh"></select>
+<label for="afTitle">标题 Title</label>
+<input type="text" id="afTitle" placeholder="例如 Opportunity cost">
+<label for="afText">定义 Definition（多条要点请一行写一条）</label>
+<textarea id="afText" placeholder="写一条或多条定义…"></textarea>
+<div class="frow">
+<button class="primary" id="afSave" type="button">添加 Add</button>
+<button id="afCancel" type="button">取消 Cancel</button>
+</div>
+<div class="note" id="afMsg">新定义会加到所选章节的最后。保存后只在你自己的浏览器里生效，点工具栏「⬇ 导出 HTML」下载新文件，上传到你的网站后学生才能看到。</div>
+</div>
+<div id="cardView" style="display:none">
+<div class="quiz">
+<button class="primary" id="flipBtn">翻转卡片</button>
+<button id="prevBtn">⬅ 上一张</button>
+<button id="nextBtn">下一张 ➡</button>
+<button id="shuffleBtn">🔀 洗牌</button>
+<button id="knownBtn" class="known-btn">✅ 认识了</button>
+<button id="unknownBtn" class="unknown-btn">❌ 还不熟</button>
+</div>
+<div class="fc" id="fc"><div class="side" id="fcSide">TERM · 点击卡片翻转</div><div class="term" id="fcTerm"></div><div class="def" id="fcDef" style="display:none"></div></div>
+<div class="progress"><div id="bar"></div></div>
+<div class="meta" id="fcMeta"></div>
+<div class="quiz">
+<label><input type="checkbox" id="onlyUnknown"> 只复习未掌握的</label>
+<button id="resetBtn">↺ 清除掌握记录</button>
+</div>
+</div>
+<div class="teachergate" id="teacherGate" style="display:none">
+<label for="tgPass">老师口令 Teacher passcode</label>
+<div class="grow">
+<input type="password" id="tgPass" placeholder="请输入口令…" autocomplete="off">
+<button class="primary" id="tgOk" type="button">确认 OK</button>
+<button id="tgCancel" type="button">取消 Cancel</button>
+</div>
+<div class="gmsg" id="tgMsg">Teacher only — 口令不正确。</div>
+</div>
+<div id="diagramView" style="display:none">
+<div class="diag-toolbar">
+<span class="result-line" style="margin:0">考试常用图表，配文字解释一起记。</span>
+<span class="spacer"></span>
+<button class="addiag" id="addDiagBtn" type="button">＋ Add diagram</button>
+</div>
+<div class="diagform" id="diagForm" style="display:none">
+<label for="dfTitle">图表标题 Title</label>
+<input type="text" id="dfTitle" placeholder="例如 Maximum price">
+<label for="dfBullets">解释要点 Explanation（一行一条）</label>
+<textarea id="dfBullets" placeholder="每行写一条解释…"></textarea>
+<label for="dfFile">图表图片 Image（可选，从本机选择图片文件）</label>
+<input type="file" id="dfFile" accept="image/*">
+<div class="frow">
+<button class="primary" id="dfSave" type="button">添加 Add</button>
+<button id="dfCancel" type="button">取消 Cancel</button>
+</div>
+<div class="note">在这里添加的图表只在本次打开页面期间显示；每张图表右上角的「删除」按钮可以随时手动删减。</div>
+</div>
+<div id="diagList"></div>
+</div>
+<div class="quiz" id="selftest" style="border-top:1px solid var(--line);padding-top:14px">
+<label><input type="checkbox" id="hideDefs"> 自测模式：隐藏全部定义（点击卡片显示）</label>
+</div>
+</div>
+<footer>卡片模式小键盘：空格 / 回车翻卡，← → 切换上一张 / 下一张。「认识了」的记录只保存在你自己的浏览器里，换设备需重新标记。老师点卡片右上角的 ✎ 可编辑标题和定义、删除定义（需口令），点工具栏「＋ 添加定义」可加新定义，误删点「↺ 恢复已删」；改完点工具栏「⬇ 导出 HTML」下载新文件上传到网站。如果点导出没反应，点「在新窗口打开」，再用浏览器的保存功能（⌘S / 文件 → 存储页面）存下来。</footer>
+<script id="teacher-edits" type="application/json">{"edits": {}, "deleted": []}</script>
+<script>
+var DATA_AO1 = [{"ch": "1.1 Scarcity, choice and opportunity cost", "items": [{"t": "Scarcity (fundamental economic problem)", "d": "Wants are unlimited, but resources are scarce."}, {"t": "Opportunity cost", "d": "The cost expressed in terms of the next best alternative that is foregone when a choice is made."}, {"t": "Basic questions of resource allocation", "d": "What to produce, how to produce, for whom to produce."}]}, {"ch": "1.2 Economic methodology", "items": [{"t": "Ceteris paribus", "d": "Ceteris paribus means other things remain equal."}]}, {"ch": "1.3 Factors of production", "items": [{"t": "Factors of production", "d": "Land, labour, capital and enterprise."}, {"t": "Land (reward: rent)", "d": "Land is a natural resource, includes water, oil and coal. The reward for land is rent."}, {"t": "Labour (reward: wage)", "d": "Labour refers to human resources, both mental workers and physical workers are included. The reward for labour is wage."}, {"t": "Capital (reward: interest)", "d": "Capital is man-made resources to aid production, which includes factories, machines and information technology. The reward for capital is interest."}, {"t": "Enterprise (reward: profit)", "d": "Enterprise is the factor which takes risks and organizes the other three factors. The reward for enterprise is profit."}, {"t": "Human capital", "d": "Human capital refers to the educational achievements and skills of the labor force, which enhance its productivity."}, {"t": "Physical capital", "d": "Physical capital refers to created resources, such as machines and buildings."}, {"t": "Specialisation", "d": "Specialisation is the process by which economic agents concentrate on producing goods and services which they are better than others at producing."}, {"t": "Division of labour", "d": "Division of labour is the separation of tasks in a system so that participants in that system can specialize."}]}, {"ch": "1.5 Production possibility curves", "items": [{"t": "Production possibility curve (PPC)", "d": "A production possibility curve (PPC) shows the maximum output of two goods which the economy can produce, assuming it uses its resources fully and efficiently."}, {"t": "Constant opportunity costs", "d": "If all resources are equally good at producing both goods, there are constant opportunity costs in production of either good: the PPC is a straight line."}, {"t": "Increasing opportunity costs", "d": "If resources are not equally efficient at producing both goods, PPC is drawn concave to the origin, which illustrates increasing opportunity costs in production of both goods."}, {"t": "Point inside the PPC", "d": "If the economy is not using its resources fully and efficiently, it is producing at a point inside the PPC."}, {"t": "Point outside the PPC", "d": "The economy cannot attain a point that is outside its PPC because it is constrained by its scarce resources. This illustrates the concept of scarcity."}]}, {"ch": "1.6 Classification of goods and services", "items": [{"t": "Free good", "d": "A free good is a good with zero opportunity cost. Free goods exist in large quantities that satisfy the needs of everyone for them, e.g. the air we breathe, rainfall."}, {"t": "Excludable", "d": "A good is excludable if the supplier of that good can prevent people who do not pay from consuming it."}, {"t": "Rival in consumption", "d": "A good is rival in consumption if the same unit of the good cannot be consumed by more than one person at the same time."}, {"t": "Private good (economic good)", "d": "Excludable and rival in consumption, e.g. food items, drinks, clothing, household goods and petrol."}, {"t": "Non-excludable", "d": "A good is non-excludable if the supplier cannot prevent consumption by people who do not pay for it."}, {"t": "Non-rival in consumption", "d": "A good is non-rival in consumption if more than one person can consume the same unit of the good at the same time."}, {"t": "Public good", "d": "Non-excludable and non-rival in consumption, e.g. national security, street lighting, traffic lights and flood control systems."}, {"t": "Quasi-public good", "d": "Non-rivalrous but excludable like a private good, since anyone not paying is excluded from using it, e.g. a toll road, a sandy seaside beach."}, {"t": "Merit good", "d": "A good which is normatively judged to be beneficial for consumers. If consumers do not have perfect information as to the full benefits, they undervalue and under-demand the good, so it is under-produced and under-consumed, e.g. an inoculation against a contagious disease."}, {"t": "Demerit good", "d": "A good which is normatively judged to be harmful for consumers. If consumers are not fully aware of the harms, they overvalue and over-demand the good, so it is over-produced and over-consumed, e.g. eating too much 'junk food'."}, {"t": "Information failure", "d": "Information failure arises when consumers do not recognise how good (merit good) or how bad (demerit good) a particular product is for them: either they do not have the right information, or they simply lack some relevant information."}]}, {"ch": "2.1 Demand and supply curves", "items": [{"t": "Demand", "d": "Demand means the quantity of a product which a purchaser is willing and able to buy at different prices in a given time period, ceteris paribus."}, {"t": "Movement along the demand curve", "d": "For a good obeying the law of demand, a fall in price would result in a rise in quantity demanded, and vice versa. This is illustrated by movements along the demand curve."}, {"t": "Supply", "d": "Supply refers to the quantity of a product that suppliers are willing and able to sell at various prices per period of time, ceteris paribus."}, {"t": "Movement along the supply curve", "d": "A fall in price would result in a fall in quantity supplied, and vice versa. This is illustrated by movements along the supply curve."}]}, {"ch": "2.2 Elasticity", "items": [{"t": "Price elasticity of demand (PED)", "d": "PED is a numerical measure of the responsiveness of the quantity demanded for a good to a change in its price. Formula: PED = % change in quantity demanded / % change in price. PED is always negative because price and quantity demanded are reversely related. Ignoring the sign: PED > 1, demand is price-elastic; PED < 1, demand is price-inelastic; PED = 1, demand is unitary price-elastic."}, {"t": "Income elasticity of demand (YED)", "d": "YED is a numerical measure of the responsiveness of the quantity demanded for a good to a change in consumer income. Formula: YED = % change in quantity demanded / % change in income. If YED is positive, quantity demanded increases with income: a normal good (income-elastic if % change in quantity demanded > % change in income; income-inelastic if less). If YED is negative, quantity demanded decreases with income: an inferior good."}, {"t": "Cross elasticity of demand (XED)", "d": "XED is a numerical measure of the responsiveness of quantity demanded of good Y to a change in price of good X. Formula: XED = % change in quantity demanded of good Y / % change in price of good X. Substitutes (e.g. coffee and tea): XED > 0. Complements (e.g. computers and software): XED < 0."}, {"t": "Price elasticity of supply (PES)", "d": "PES is a numerical measure of the responsiveness of the quantity supplied for a good to a change in its price. Formula: PES = % change in quantity supplied / % change in price. PES > 1, supply is price-elastic; PES < 1, supply is price-inelastic; PES = 1, supply is unitary price-elastic."}]}, {"ch": "2.4 The interaction of demand and supply", "items": [{"t": "Market equilibrium", "d": "When demand meets supply, the quantity that consumers wish to buy is exactly balanced by the quantity that firms wish to sell. At the equilibrium price, price has no tendency to change."}, {"t": "Market disequilibrium", "d": "A market disequilibrium occurs when quantity demanded is not equal to quantity supplied at the market price. If price is higher than Pe, quantity demanded is less than quantity supplied: a surplus. If price is lower than Pe, quantity demanded is greater than quantity supplied: a shortage."}, {"t": "Signalling function of price", "d": "Prices convey information to both buyers and sellers about market conditions. An increase in price signals that the product has become relatively more valuable for sellers and more costly for buyers."}, {"t": "Rationing function of price", "d": "Prices restrict consumption to those buyers with a high enough willingness and ability to pay. When price rises, quantity demanded falls."}, {"t": "Incentive function of price", "d": "Prices encourage firms to allocate scarce resources to the production of goods and services. When price rises, quantity supplied rises."}]}, {"ch": "2.5 Consumer and producer surplus", "items": [{"t": "Consumer surplus", "d": "Consumer surplus is a measure of the welfare consumers gain from purchasing a good. It is defined as the difference between the price that a consumer is willing and able to pay for a good, and the price they actually pay."}, {"t": "Producer surplus", "d": "Producer surplus is the difference between the price that a producer is willing and able to sell a good for, and the price they actually receive for it."}]}, {"ch": "3.2 Methods and effects of government intervention in markets", "items": [{"t": "Indirect tax", "d": "An indirect tax is a tax that is levied on goods and services. With a specific tax, this is represented by a shift to the left of the supply curve by the amount of the tax."}, {"t": "Incidence of a tax", "d": "Incidence is the term used to describe the extent to which the tax burden is borne by the producer, by the consumer or by both."}, {"t": "Subsidy", "d": "A subsidy is direct payments made by government to the producers of goods and services. It is the equivalent of a fall in costs for the producer and results in a rightward shift in the market supply curve."}, {"t": "Direct provision", "d": "Direct provision means that governments provide certain important services free of charge at the point of use or consumption, financed through the tax system. The two most common instances are merit goods and public goods."}, {"t": "Maximum price", "d": "A maximum price is the highest amount that a producer is allowed to charge for a good or service, which is fixed by the government. To be effective it must be set below the market price; at Pmax, quantity demanded (Qd) exceeds quantity supplied (Qs): a shortage of (Qd - Qs)."}, {"t": "Minimum price", "d": "A minimum price is the lowest amount that a producer is allowed to charge for a good or service, which is fixed by the government. To be effective it must be set above the market price; at Pmin, quantity supplied (Qs) exceeds quantity demanded (Qd): a surplus of (Qs - Qd)."}, {"t": "Buffer stock scheme", "d": "A buffer stock scheme is designed to smooth price rises and falls by buying and selling stocks of products depending on market conditions."}, {"t": "Provision of information", "d": "Provision of information is when governments directly provide information to correct market failure, e.g. compulsory information on cigarette packets, public health campaigns, advice on non-prescription medicines, nutrition and allergy information on food packaging."}]}, {"ch": "Addressing income and wealth inequality", "items": [{"t": "Income", "d": "Income is the reward for the services of a factor of production, which includes rent, interest, wage and profit."}, {"t": "Wealth", "d": "Wealth is the sum of properties and assets held by a person, which includes businesses, property and shares. Wealth is a stock (measured at a point in time), but income is a flow (measured over a period of time)."}, {"t": "Gini coefficient", "d": "The Gini coefficient is a numerical measure of the extent of income inequality in an economy. If income distribution is equal, the Gini coefficient is 0. If all income accrues to just one person, it is 1. A lower figure indicates a more equal distribution of income."}, {"t": "Minimum wage", "d": "A minimum wage rate is a legal requirement of what employers must pay an employee per hour. It is a rate before tax and any social security deductions are made."}, {"t": "Transfer payment", "d": "A transfer payment is a payment made by the government to certain members of the community who may be unable to work or are in need of assistance. Their function is to provide a more equitable distribution of income, e.g. old age pensions, unemployment benefits."}, {"t": "Progressive tax", "d": "Progressive taxes: those earning higher incomes are taxed a higher rate or percentage of their income than those on lower incomes."}, {"t": "Inheritance tax", "d": "Inheritance tax: a progressive tax on an inheritance or gift."}, {"t": "Capital tax", "d": "Capital tax: a progressive tax paid annually on the difference between the buying and selling price of an asset."}]}, {"ch": "4.1 National income statistics", "items": [{"t": "Final good or service", "d": "A final good or service is the one that is sold to the final user."}, {"t": "Gross Domestic Product (GDP)", "d": "Gross domestic product (GDP) is the total value of all final goods and services produced in the economy during a given year."}, {"t": "Gross National Income (GNI)", "d": "Gross National Income (GNI) is the total amount of money earned by a nation's people and businesses. GNI = GDP + factor payments from abroad - factor payments to abroad."}, {"t": "Net National Income (NNI)", "d": "Net national income (NNI) is defined as gross national income minus the depreciation of capital goods. NNI = GNI - Depreciation."}, {"t": "Market prices and basic prices", "d": "Market prices are the prices charged to consumers, while basic prices equal the income paid to the factors of production for making the output. GDP at factor cost + indirect taxes - subsidies = GDP at market price."}]}, {"ch": "4.2 Introduction to the circular flow of income", "items": [{"t": "Circular flow of income", "d": "The circular-flow diagram represents the transactions in an economy by flows around a circle. In the simplest model, firms pay wages to workers and produce output, while households consume goods and receive wages from firms."}, {"t": "Injection (J)", "d": "Injection (J) is the money flowing into the economy. This includes government spending, investment and exports."}, {"t": "Leakage (W)", "d": "Leakage (W) is the money flowing out of the economy. This includes taxation, savings and imports."}, {"t": "Equilibrium in the circular flow", "d": "The economy is in equilibrium when injections are equal to withdrawals (J = W). Note: this is not the same as full employment equilibrium."}, {"t": "Disequilibrium in the circular flow", "d": "The economy is in disequilibrium when J is greater than W or W is greater than J. Where J > W, the economy is increasing in size. Where W > J, the economy is shrinking in size."}]}, {"ch": "4.3 Aggregate Demand and Aggregate Supply analysis", "items": [{"t": "Aggregate Demand (AD)", "d": "The aggregate demand curve indicates the quantity of domestically produced final goods that is demanded in an economy over a given period of time and for any given price level. AD has 4 components: consumption, investment, government purchases and net exports. AD = C + I + G + (X - M)."}, {"t": "Consumption (C) / Investment (I) / Government purchases (G) / Net exports (X-M)", "d": "Consumption (C) refers to spending by households on consumer goods; investment (I) refers to spending by private businesses on capital equipment; government purchase (G) is spending by the government on final goods and services; net exports (X-M) is the difference between the value of exports and imports."}, {"t": "Short-run aggregate supply (SRAS)", "d": "The short-run aggregate supply curve shows the relationship between the aggregate price level and the quantity of aggregate output supplied that exists in the short run, the time period when many production costs can be taken as fixed."}, {"t": "Long-run aggregate supply (LRAS)", "d": "The long-run aggregate supply curve shows the relationship between the aggregate price level and the quantity of aggregate output supplied that would exist if all prices, including nominal wages, were fully flexible."}, {"t": "Macroeconomic equilibrium", "d": "A macroeconomic equilibrium is a combination of overall price and quantity at which all buyers and sellers are satisfied with their overall purchases, sales and prices. National equilibrium occurs where AD and AS intersect."}]}, {"ch": "4.4 Economic growth", "items": [{"t": "Real GDP", "d": "Real GDP is the total value of all final goods and services produced in the economy during a given year, calculated using the prices of a selected base year."}, {"t": "Economic growth", "d": "Economic growth is an increase in the production potential or real GDP of an economy."}, {"t": "Economic growth rate", "d": "The economic growth rate is the annual percentage change in output."}, {"t": "Actual growth", "d": "Movement from a point inside a production possibility curve to a point on the curve represents actual growth."}, {"t": "Potential growth", "d": "Potential economic growth occurs when there is an increase in productive capacity, shown by the production possibility curve shifting outward."}]}, {"ch": "4.5 Unemployment", "items": [{"t": "Unemployment", "d": "Unemployment is the number of people who are actively looking for work but aren't currently employed."}, {"t": "Labour force and unemployment rate", "d": "The labor force is equal to the sum of employment and unemployment. The unemployment rate is the percentage of the total number of people in the labor force who are unemployed."}, {"t": "Frictional unemployment", "d": "Frictional unemployment is unemployment that arises when workers are between jobs. This includes voluntary unemployment, search unemployment and seasonal unemployment."}, {"t": "Structural unemployment", "d": "Structural unemployment arises due to changes in the structure of the economy. This includes regional unemployment, technological unemployment and international unemployment."}, {"t": "Cyclical unemployment", "d": "Cyclical unemployment arises due to a lack of aggregate demand. It affects the whole economy, with job losses occurring across a range of industries."}]}, {"ch": "4.6 Price stability", "items": [{"t": "Price level", "d": "The price level is a measure of the overall level of prices in the economy."}, {"t": "Inflation", "d": "Inflation is a situation where there is a sustained rise in the general price level during a given time period."}, {"t": "Price index", "d": "A price index measures the cost of purchasing a given market basket in a given year, where that cost is normalized so that it is equal to 100 in the selected base year."}, {"t": "Inflation rate", "d": "The inflation rate is the annual percent change in an official price index."}, {"t": "Deflation", "d": "Deflation is a situation where there is a sustained fall in the general price level during a given time period."}, {"t": "Demand-pull inflation", "d": "Demand-pull inflation occurs when there is an increase in aggregate demand which is not matched by an equivalent increase in aggregate supply. This is likely to be the case when an economy is at a situation of full employment."}, {"t": "Cost-push inflation", "d": "Cost-push inflation occurs when there is a decrease in aggregate supply caused by an increase in cost of production which is not matched by a decrease in aggregate demand."}]}, {"ch": "5.2 Fiscal policy", "items": [{"t": "Fiscal policy", "d": "Fiscal policy is the use of taxation and government spending to manage aggregate demand in order to achieve the government's macroeconomic aims."}, {"t": "Budget surplus", "d": "A budget surplus arises when government revenue exceeds government spending in a fiscal year."}, {"t": "Budget deficit", "d": "A budget deficit occurs when government spending exceeds government revenue in a fiscal year."}, {"t": "Balanced budget", "d": "A balanced budget is when government spending matches tax revenue."}, {"t": "National (government / public sector) debt", "d": "Government or public sector debt is the total debt a central government, or the whole public sector, has built up over time. It is often expressed as a percentage of GDP."}, {"t": "Progressive tax", "d": "Progressive tax is a tax that takes a higher percentage from those with higher incomes. In this case, marginal rate of taxation increases with income."}, {"t": "Regressive tax", "d": "Regressive tax is a tax that takes a greater percentage from those on lower incomes. In this case, marginal rate of taxation decreases with income."}, {"t": "Proportional tax", "d": "For proportional tax, tax rate is same at all income levels. Everyone pays same proportion in taxes. In this case, marginal tax rate is equal to average tax rate."}, {"t": "Capital spending", "d": "Capital spending includes goods and services intended to create future benefits."}, {"t": "Current spending", "d": "Current spending includes goods and services for current use to directly satisfy the individual or collective needs of members of the community."}, {"t": "Expansionary fiscal policy", "d": "Expansionary fiscal policy is fiscal policy that increases aggregate demand. It normally takes one of three forms: an increase in government purchases of goods and services, a cut in taxes, and an increase in government transfers."}, {"t": "Contractionary fiscal policy", "d": "Contractionary fiscal policy is fiscal policy that decreases aggregate demand. It normally takes one of three forms: a decrease in government purchases of goods and services, an increase in taxes, and a decrease in government transfers."}]}, {"ch": "5.3 Monetary policy", "items": [{"t": "Monetary policy", "d": "Monetary policy is action that a country's central bank can take to influence how much money is in the economy and how much it costs to borrow."}, {"t": "Interest rates", "d": "Interest rates are the cost of borrowing money and the return on lending money."}, {"t": "Expansionary monetary policy", "d": "Expansionary monetary policy may be used to increase aggregate demand. A cut in the interest rate, an increase in the money supply and a reduction in any restrictions on bank lending can be used to achieve an increase."}, {"t": "Contractionary monetary policy", "d": "To reduce aggregate demand or the growth of AD, contractionary monetary policy may be used. This might include a rise in the interest rate, a decrease in the money supply and restrictions on bank lending."}]}, {"ch": "5.4 Supply-side policy", "items": [{"t": "Supply-side policy", "d": "Governments use supply-side policies to increase aggregate supply by improving the workings of product and factor markets. Supply-side policy tools seek to increase productive capacity and so shift the economy's long-run aggregate supply (LRAS) curve to the right. The tools include spending on education and training, promoting infrastructure development and support for technological improvement."}]}, {"ch": "6.1 The reasons for international trade", "items": [{"t": "Absolute advantage", "d": "A country has an absolute advantage in producing a product if it can produce more of the product with the same quantity of resources than another country."}, {"t": "Comparative advantage", "d": "Comparative advantage is a situation where a country can produce a good or service at a lower domestic opportunity cost than another country."}, {"t": "Terms of trade", "d": "The terms of trade is a measure of the ratio of export prices and import prices. The ratio is calculated from the average prices of many goods and services traded internationally, weighted by the relative importance of each product traded. Terms of trade index = index of export prices / index of import prices x 100."}, {"t": "Improvement / deterioration in the terms of trade", "d": "If the terms of trade index increases, this is a favourable movement or an improvement: fewer exports have to be sold to buy any given quantity of imports. If the index falls, this is an unfavourable movement or deterioration: more exports must be exchanged to gain the same quantity of imports."}]}, {"ch": "6.2 Protectionism", "items": [{"t": "Protectionism", "d": "Protectionism is when governments seek to protect domestic industries from foreign competition. Protectionism involves the restriction of free trade."}, {"t": "Tariff", "d": "Tariffs are taxes, usually on imports but they may also be imposed on exports."}, {"t": "Import quota", "d": "Import quotas are limits imposed on the quantity of imports."}, {"t": "Export subsidy", "d": "An export subsidy allows businesses whose price would be too high abroad to sell in foreign countries at the world price, thus increasing their competitiveness."}, {"t": "Embargo", "d": "An embargo is a complete ban either on the imports of a particular product or on trade with a particular country."}, {"t": "Excessive administrative burdens ('red tape')", "d": "A government may seek to discourage imports by requiring importers to fill out lengthy forms that are time-consuming to complete. It may also set artificially high product standards to restrict foreign competition."}]}, {"ch": "6.3 Current account of the balance of payments", "items": [{"t": "Current account components", "d": "The current account has four components: trade in goods, trade in services, primary income and secondary income."}, {"t": "Trade in goods (visible trade balance)", "d": "Trade in goods covers the exports and imports of goods such as cars, TVs and clothing. Exports are recorded as credit entries while imports are recorded as debit entries."}, {"t": "Trade in services (invisible trade balance)", "d": "Trade in services covers the trade in services, such as shipping, tourism, banking and insurance."}, {"t": "Primary income", "d": "Primary income refers to net income flows, such as profit or dividends from investments abroad, interest on loans overseas."}, {"t": "Secondary income", "d": "Secondary income refers to net current transfers, such as foreign aids. There is no corresponding exchange of an actual good or service."}, {"t": "Current account deficit", "d": "Current account deficit means money coming into the current account is less than money going out from the current account: the combined debit items on the four parts are greater than the combined credit items."}, {"t": "Current account surplus", "d": "Current account surplus means money coming into the current account is greater than money going out from the current account: the credit items on the four parts are greater than the combined debit items."}]}, {"ch": "6.4 Exchange rates", "items": [{"t": "Foreign exchange rate", "d": "The foreign exchange rate is the price of one currency in terms of another currency; that is, the price of the domestic currency in terms of a foreign currency."}, {"t": "Depreciation (floating exchange rate)", "d": "A fall in the value of a currency, caused by a decrease in demand and/or an increase in supply, is known as a depreciation. Such a fall will cause a reduction in export prices in terms of foreign currencies and a rise in import prices in terms of the domestic currency."}, {"t": "Appreciation (floating exchange rate)", "d": "A rise in the value of the currency, caused by an increase in demand and/or a decrease in supply, is known as an appreciation. This will make exports more expensive in terms of foreign currencies, and imports cheaper in terms of the domestic currency."}]}];
+var DATA_AO2 = [{"ch": "Addressing income and wealth inequality", "items": [{"t": "Wage gap between the public and private sectors", "g": "3.3 Economic reasons for inequality", "d": "Even for workers with the same level of productivity, the wage rate in the private sector is usually higher than in the public sector. This is because public sector jobs often provide more stability and non-pecuniary benefits, which can offset lower wages to some extent."}, {"t": "Poor vocational training", "g": "3.3 Economic reasons for inequality", "d": "Poor vocational training means local industries cannot obtain the labour needed to maintain a viable operation in national and international markets, leading to fewer people being able to develop their skills and earn a higher income. This may be more of a problem in such countries because of the lack of finance to provide such training."}, {"t": "Lack of investment in education and health", "g": "3.3 Economic reasons for inequality", "d": "A lack of investment in the education and health sectors holds back human capital needed to promote economic growth. Individuals with more education and skills generally have higher productivity and are more adept at learning new skills in the modern economy. As a result, they are more likely to secure high-skilled jobs, which lead to higher income. In contrast, individuals with limited education often find themselves in low-skilled and unstable jobs, potentially resulting in lower income."}, {"t": "Poor infrastructure", "g": "3.3 Economic reasons for inequality", "d": "Poor infrastructure such as roads, railways, power and water supplies."}, {"t": "Low rate of savings", "g": "3.3 Economic reasons for inequality", "d": "A low rate of savings holds back private and public sector investment."}, {"t": "Inability to obtain credit", "g": "3.3 Economic reasons for inequality", "d": "The inability of many people to obtain credit to fund small businesses and improved personal education."}, {"t": "Minimum wage \u2014 advantage: narrows the pay differential", "g": "3.4 Policies to redistribute income and wealth", "d": "The minimum wage increases the wages of the lowest paid. Since those on the highest incomes earn above the minimum wage (and are not affected by it), the differential between the highest and lowest paid falls."}, {"t": "Minimum wage \u2014 advantage: training and health", "g": "3.4 Policies to redistribute income and wealth", "b": ["Increasing the incomes of the lowest paid may enable them to pay for training courses / better education to assist them in gaining higher paid jobs in the future.", "A minimum wage may mean lowest earners can now afford better accommodation / healthier foods, thereby increasing their health, enabling them to attend work for longer rather than taking prolonged periods of time from work due to illness."]}, {"t": "Minimum wage \u2014 diagram effect", "g": "3.4 Policies to redistribute income and wealth", "d": "The equilibrium wage rate is W. Introducing a minimum wage increases the wage rate to Wmin. At this higher wage rate, employers will only employ Qd workers yet Qs workers are willing to work. Those who are employed will get more pay but at the cost of fewer jobs being available. This unemployment is shown by the gap between Qd and Qs."}, {"t": "Minimum wage \u2014 disadvantages", "g": "3.4 Policies to redistribute income and wealth", "b": ["Lead to income becoming more unequal: some employers may not be able to pay all their workers the minimum wage, so some of them may become unemployed and be forced to live on benefits.", "Takes no account of variations in the cost of living in different parts of a country.", "There may be a large informal economy and a minimum wage would not apply to such workers (self-employment).", "If any increase in the minimum wage is below the rate of average earnings, then income inequality may rise.", "The lower the proportion of the workforce that currently earn below a proposed minimum wage, the less impact the policy will have."]}, {"t": "Transfer payments \u2014 advantages", "g": "3.4 Policies to redistribute income and wealth", "b": ["By providing transfer payments to the poorest and most vulnerable in society, this may reduce income inequality for those unable to work or in need of assistance.", "Transfer payments in the form of housing allowances, food coupons or in-work benefits will reduce the financial burdens for low-income families and may result in families being able to afford to access training / education and acquire the skills needed to apply for higher-paid jobs.", "Transfer payments may be funded by increased direct tax and may be progressive, which will assist in income redistribution and reduce inequality."]}, {"t": "Transfer payments \u2014 disadvantages", "g": "3.4 Policies to redistribute income and wealth", "b": ["The extent to which transfer payments can be used to support the vulnerable is dependent upon both the amount of tax receipts the government receives from taxpayers and the percentage of the population eligible to receive transfer payments: the higher the proportion, the less individual benefit can be given.", "If transfer payments such as unemployment benefits create a disincentive to work, then unemployment may rise and therefore have minimal / no impact on reducing income inequality."]}, {"t": "State provision \u2014 disadvantages", "g": "3.4 Policies to redistribute income and wealth", "b": ["The goods and services might be provided to some people who would have been able to pay for them, so some public money could be wasted.", "The quantity and quality of provision would be limited by the amount of funds available to the government, which would depend on the economy's fiscal policy and the amount of tax revenue collected."]}, {"t": "Progressive income taxes, inheritance and capital taxes", "g": "3.4 Policies to redistribute income and wealth", "b": ["Providing funds for transfer payments.", "Raises government revenue for redistribution.", "May weaken incentives to work and invest.", "High earners avoid taxation or emigrate (brain drain).", "It could lead to greater tax evasion.", "May discourage saving and investment."]}]}];
+var DATA_BY_AO = { AO1: DATA_AO1, AO2: DATA_AO2 };
+var currentAO = 'AO1';
+var LSKEY = 'as9708-def-known-v1';
+var known = {}; try { known = JSON.parse(localStorage.getItem(LSKEY) || '{}'); } catch(e) { known = {}; }
+var storageOK = true;
+function storageFailed(){ storageOK = false; var w = document.getElementById('storageWarn'); if (w) w.style.display = 'block'; }
+try { localStorage.setItem('__as9708_test__', '1'); localStorage.removeItem('__as9708_test__'); } catch(e) { storageFailed(); }
+function saveKnown(){ try { localStorage.setItem(LSKEY, JSON.stringify(known)); } catch(e) { storageFailed(); } }
+var EDITS_KEY = 'as9708-def-edits-v1';
+var DELETED_KEY = 'as9708-def-deleted-v1';
+var ADDED_KEY = 'as9708-def-added-v1';
+var edits = {};
+var deleted = {};
+var added = [];
+function _mergeMap(dst, src){ if (src) { for (var _k in src) dst[_k] = src[_k]; } }
+function _addedKey(a){ return a.ao + '|' + a.ch + '|' + a.t; }
+function _pushAdded(a){ if (!a || !a.ao || !a.ch || !a.t) return; var k = _addedKey(a); for (var i = 0; i < added.length; i++) { if (_addedKey(added[i]) === k) return; } added.push(a); }
+try { var _eb = document.getElementById('teacher-edits'); if (_eb) { var _ej = JSON.parse(_eb.textContent || '{}'); if (_ej && _ej.edits) { _mergeMap(edits, _ej.edits); (_ej.deleted || []).forEach(function(k){ deleted[k] = 1; }); (_ej.added || []).forEach(_pushAdded); } else { _mergeMap(edits, _ej); } } } catch(e) {}
+try { _mergeMap(edits, JSON.parse(localStorage.getItem(EDITS_KEY) || '{}')); } catch(e) {}
+try { _mergeMap(deleted, JSON.parse(localStorage.getItem(DELETED_KEY) || '{}')); } catch(e) {}
+try { var _la = JSON.parse(localStorage.getItem(ADDED_KEY) || '[]'); if (Array.isArray(_la)) { _la.forEach(_pushAdded); } } catch(e) {}
+function saveEdits(){ try { localStorage.setItem(EDITS_KEY, JSON.stringify(edits)); } catch(e) { storageFailed(); } }
+function saveDeleted(){ try { localStorage.setItem(DELETED_KEY, JSON.stringify(deleted)); } catch(e) { storageFailed(); } }
+function saveAdded(){ try { localStorage.setItem(ADDED_KEY, JSON.stringify(added)); } catch(e) { storageFailed(); } }
+function applyOv(ek, d, b, t){
+  var ov = edits[ek];
+  if (ov == null) return {d: d, b: b, t: t, edited: false};
+  var nd = d, nb = b, nt = t;
+  var txt = (typeof ov === 'string') ? ov : ov.d;
+  if (txt != null) {
+    if (b) { nb = String(txt).split('\n').map(function(x){ return x.trim(); }).filter(function(x){ return x; }); nd = nb.join(' '); }
+    else { nd = String(txt); }
+  }
+  if (typeof ov !== 'string' && ov.t) { nt = String(ov.t); }
+  return {d: nd, b: nb, t: nt, edited: true};
+}
+function flat(){ var out=[]; DATA_BY_AO[currentAO].forEach(function(s,si){ s.items.forEach(function(it,ii){ var ek = currentAO + '|' + s.ch + '|' + it.t; if (deleted[ek]) return; var r = applyOv(ek, it.d || (it.b ? it.b.join(' ') : ''), it.b || null, it.t); out.push({ch:s.ch, t:r.t, d:r.d, b:r.b, g:(it.g || ''), id:(currentAO==='AO2' ? 'ao2-' : '')+si+'-'+ii, ek:ek, edited:r.edited}); }); }); added.forEach(function(a, ai){ if (a.ao !== currentAO) return; var ek = a.ao + '|' + a.ch + '|' + a.t; if (deleted[ek]) return; var r = applyOv(ek, a.d || (a.b ? a.b.join(' ') : ''), a.b || null, a.t); out.push({ch:a.ch, t:r.t, d:r.d, b:r.b, g:'', id:'added-' + ai, ek:ek, edited:r.edited, added:true}); }); return out; }
+var ALL = flat();
+var chsel = document.getElementById('chsel');
+function buildChapterOptions(){
+  chsel.innerHTML = '';
+  var all = document.createElement('option'); all.value=''; all.textContent='全部章节'; chsel.appendChild(all);
+  DATA_BY_AO[currentAO].forEach(function(s){ var o=document.createElement('option'); o.value=s.ch; o.textContent=s.ch; chsel.appendChild(o); });
+}
+buildChapterOptions();
+function curFilter(){
+  var q = document.getElementById('q').value.trim().toLowerCase();
+  var ch = chsel.value;
+  return ALL.filter(function(it){
+    if (ch && it.ch !== ch) return false;
+    if (q && (it.t.toLowerCase().indexOf(q)<0 && it.d.toLowerCase().indexOf(q)<0)) return false;
+    return true; });
+}
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function render(){
+  document.getElementById('editForm').style.display = 'none';
+  document.getElementById('addForm').style.display = 'none';
+  ALL = flat();
+  var _sd = document.getElementById('statDef');
+  if (_sd) { var _n = 0; DATA_AO1.forEach(function(s){ s.items.forEach(function(it){ if (!deleted['AO1|' + s.ch + '|' + it.t]) _n++; }); }); added.forEach(function(a){ if (a.ao === 'AO1' && !deleted[a.ao + '|' + a.ch + '|' + a.t]) _n++; }); _sd.textContent = _n; }
+  var _sc = document.getElementById('statCh');
+  if (_sc) { _sc.textContent = DATA_AO1.length; }
+  var hide = document.getElementById('hideDefs').checked;
+  var list = curFilter();
+  var lv = document.getElementById('listView'); lv.innerHTML = '';
+  if (!DATA_BY_AO[currentAO].length) { lv.innerHTML = '<div class="nores">AO2 内容正在更新中，敬请期待。</div>'; buildDeck(); return; }
+  if (!list.length) { var chNoAO2 = currentAO === 'AO2' && chsel.value && !DATA_BY_AO[currentAO].some(function(s){ return s.ch === chsel.value; }); lv.innerHTML = chNoAO2 ? '<div class="nores">AO2 内容正在更新中，敬请期待。</div>' : '<div class="nores">没有找到匹配的定义，换个关键词试试。</div>'; }
+  var byCh = {};
+  list.forEach(function(it){ (byCh[it.ch] = byCh[it.ch] || []).push(it); });
+  Object.keys(byCh).forEach(function(ch){
+    var sec = document.createElement('div'); sec.className='sec';
+    sec.innerHTML = '<h2>'+esc(ch)+'（'+byCh[ch].length+'条）</h2>';
+    var lastG = null;
+    byCh[ch].forEach(function(it){
+      if (it.g && it.g !== lastG) {
+        lastG = it.g;
+        var gh = document.createElement('div'); gh.className = 'grouphead'; gh.textContent = it.g;
+        sec.appendChild(gh);
+      }
+      var cd = document.createElement('div'); cd.className = 'card' + (hide ? ' hidden-def' : '');
+      var defHtml = it.b ? '<ul class="bullets">' + it.b.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('') + '</ul>' : esc(it.d);
+      cd.innerHTML = '<div class="ch">'+esc(ch)+'</div><button type="button" class="editbtn" title="老师编辑定义">✎ 编辑</button><div class="term">'+esc(it.t)+(it.edited ? ' <span class="edited-tag">已修改</span>' : '')+'</div><div class="def">'+defHtml+'</div>' + (hide ? '<div class="hint">点击显示定义</div>' : '');
+      cd.onclick = function(){ cd.classList.toggle('hidden-def'); };
+      cd.querySelector('.editbtn').onclick = function(ev){ ev.stopPropagation(); openEdit(it); };
+      sec.appendChild(cd);
+    });
+    lv.appendChild(sec);
+  });
+  buildDeck();
+}
+var deck = [], di = 0, flipped = false;
+function buildDeck(){
+  var onlyU = document.getElementById('onlyUnknown').checked;
+  deck = curFilter().filter(function(it){ return !onlyU || !known[it.id]; });
+  if (di >= deck.length) di = 0;
+  showCard();
+}
+function showCard(){
+  var fcTerm = document.getElementById('fcTerm'), fcDef = document.getElementById('fcDef'),
+      fcSide = document.getElementById('fcSide'), meta = document.getElementById('fcMeta'), bar = document.getElementById('bar');
+  if (!DATA_BY_AO[currentAO].length) { fcSide.textContent='AO2'; fcTerm.textContent='AO2 内容正在更新中，敬请期待。'; fcTerm.style.display='block'; fcDef.textContent=''; fcDef.style.display='none'; meta.textContent=''; bar.style.width='0%'; return; }
+  if (currentAO === 'AO2' && chsel.value && !DATA_BY_AO[currentAO].some(function(s){ return s.ch === chsel.value; })) { fcSide.textContent='AO2'; fcTerm.textContent='AO2 内容正在更新中，敬请期待。'; fcTerm.style.display='block'; fcDef.textContent=''; fcDef.style.display='none'; meta.textContent=''; bar.style.width='0%'; return; }
+  if (!deck.length) { fcTerm.textContent = '本组已全部掌握 🎉'; fcDef.style.display='none'; fcSide.textContent='TERM'; meta.textContent=''; bar.style.width='0%'; return; }
+  var it = deck[di];
+  fcSide.textContent = (flipped ? 'DEFINITION · ' : 'TERM · ') + it.ch + ' · 点击卡片翻转';
+  fcTerm.textContent = flipped ? '' : it.t;
+  fcTerm.style.display = flipped ? 'none' : 'block';
+  if (flipped && it.b) { fcDef.innerHTML = '<ul class="fcbullets">' + it.b.map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('') + '</ul>'; }
+  else { fcDef.textContent = flipped ? it.d : ''; }
+  fcDef.style.display = flipped ? 'block' : 'none';
+  var total = curFilter().length || 1;
+  var k = curFilter().filter(function(x){ return known[x.id]; }).length;
+  meta.textContent = '第 ' + (di+1) + ' / ' + deck.length + ' 张　·　本组已掌握 ' + k + ' / ' + total + ' 条';
+  bar.style.width = Math.round(k/total*100) + '%';
+}
+function flip(){ if (deck.length){ flipped = !flipped; showCard(); } }
+function step(n){ if (!deck.length) return; di = (di + n + deck.length) % deck.length; flipped = false; showCard(); }
+document.getElementById('fc').onclick = flip;
+document.getElementById('flipBtn').onclick = flip;
+document.getElementById('prevBtn').onclick = function(){ step(-1); };
+document.getElementById('nextBtn').onclick = function(){ step(1); };
+document.getElementById('shuffleBtn').onclick = function(){ for (var i=deck.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=deck[i]; deck[i]=deck[j]; deck[j]=t; } di=0; flipped=false; showCard(); };
+document.getElementById('knownBtn').onclick = function(){ if(!deck.length) return; known[deck[di].id]=1; saveKnown(); step(1); };
+document.getElementById('unknownBtn').onclick = function(){ if(!deck.length) return; delete known[deck[di].id]; saveKnown(); step(1); };
+document.getElementById('resetBtn').onclick = function(){ known={}; saveKnown(); buildDeck(); render(); };
+document.getElementById('onlyUnknown').onchange = buildDeck;
+document.getElementById('hideDefs').onchange = render;
+document.getElementById('q').oninput = function(){ render(); if (diagramActive) renderDiagrams(); };
+chsel.onchange = render;
+var diagramActive = false;
+function leaveDiagramView(){
+  if (!diagramActive) return;
+  diagramActive = false;
+  document.getElementById('diagramView').style.display = 'none';
+  document.getElementById('tabDiagram').classList.remove('active');
+  document.getElementById('tabDiagram').setAttribute('aria-selected', 'false');
+  document.getElementById('tabAO1').classList.toggle('active', currentAO === 'AO1');
+  document.getElementById('tabAO2').classList.toggle('active', currentAO === 'AO2');
+  document.getElementById('tabAO1').setAttribute('aria-selected', currentAO === 'AO1' ? 'true' : 'false');
+  document.getElementById('tabAO2').setAttribute('aria-selected', currentAO === 'AO2' ? 'true' : 'false');
+}
+function setAO(ao){
+  if (currentAO === ao && !diagramActive) return;
+  if (currentAO === ao && diagramActive) {
+    leaveDiagramView();
+    document.getElementById('listView').style.display = 'block';
+    document.getElementById('cardView').style.display = 'none';
+    document.getElementById('selftest').style.display = 'flex';
+    document.getElementById('btnList').classList.add('active');
+    document.getElementById('btnCard').classList.remove('active');
+    return;
+  }
+  leaveDiagramView();
+  currentAO = ao;
+  document.getElementById('tabAO1').classList.toggle('active', ao === 'AO1');
+  document.getElementById('tabAO2').classList.toggle('active', ao === 'AO2');
+  document.getElementById('tabAO1').setAttribute('aria-selected', ao === 'AO1' ? 'true' : 'false');
+  document.getElementById('tabAO2').setAttribute('aria-selected', ao === 'AO2' ? 'true' : 'false');
+  ALL = flat();
+  di = 0; flipped = false;
+  buildChapterOptions();
+  render();
+}
+document.getElementById('tabAO1').onclick = function(){ setAO('AO1'); };
+document.getElementById('tabAO2').onclick = function(){ setAO('AO2'); };
+document.getElementById('btnList').onclick = function(){ leaveDiagramView(); document.getElementById('listView').style.display='block'; document.getElementById('cardView').style.display='none'; document.getElementById('selftest').style.display='flex'; this.classList.add('active'); document.getElementById('btnCard').classList.remove('active'); };
+document.getElementById('btnCard').onclick = function(){ leaveDiagramView(); document.getElementById('listView').style.display='none'; document.getElementById('cardView').style.display='block'; document.getElementById('selftest').style.display='none'; this.classList.add('active'); document.getElementById('btnList').classList.remove('active'); buildDeck(); };
+document.addEventListener('keydown', function(e){
+  if (document.getElementById('cardView').style.display === 'none') return;
+  if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flip(); }
+  if (e.key === 'ArrowRight') step(1);
+  if (e.key === 'ArrowLeft') step(-1);
+});
+function minWageSVG(){
+  return '<svg viewBox="0 0 460 340" role="img" aria-label="Minimum wage diagram: demand and supply of labour, equilibrium at W and Q, minimum wage Wmin creating a surplus of labour between Qd and Qs" font-family="inherit">'
+  + '<defs>'
+  + '<marker id="mwInk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--ink)"></path></marker>'
+  + '<marker id="mwOrg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e07b24"></path></marker>'
+  + '<marker id="mwNav" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--navy)"></path></marker>'
+  + '</defs>'
+  + '<line x1="62" y1="290" x2="434" y2="290" stroke="var(--ink)" stroke-width="2" marker-end="url(#mwInk)"></line>'
+  + '<line x1="70" y1="298" x2="70" y2="26" stroke="var(--ink)" stroke-width="2" marker-end="url(#mwInk)"></line>'
+  + '<text x="4" y="50" font-size="15" fill="var(--ink)">Wage</text>'
+  + '<text x="12" y="70" font-size="15" fill="var(--ink)">($)</text>'
+  + '<text x="352" y="313" font-size="15" fill="var(--ink)" text-anchor="middle">Quantity of labour</text>'
+  + '<line x1="70" y1="260" x2="390" y2="70" stroke="var(--navy)" stroke-width="2.6"></line>'
+  + '<line x1="90" y1="60" x2="400" y2="250" stroke="var(--navy)" stroke-width="2.6"></line>'
+  + '<text x="397" y="66" font-size="16" font-weight="600" fill="var(--ink)">S</text>'
+  + '<text x="408" y="258" font-size="16" font-weight="600" fill="var(--ink)">D</text>'
+  + '<line x1="172" y1="110" x2="172" y2="290" stroke="var(--navy)" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.85"></line>'
+  + '<line x1="246" y1="156" x2="246" y2="290" stroke="var(--navy)" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.85"></line>'
+  + '<line x1="323" y1="110" x2="323" y2="290" stroke="var(--navy)" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.85"></line>'
+  + '<line x1="70" y1="156" x2="246" y2="156" stroke="var(--navy)" stroke-width="1.6" stroke-dasharray="6 5" opacity="0.85"></line>'
+  + '<line x1="70" y1="110" x2="420" y2="110" stroke="#e07b24" stroke-width="2.6"></line>'
+  + '<text x="64" y="115" font-size="15" font-weight="700" fill="#e07b24" text-anchor="end">Wmin</text>'
+  + '<line x1="47" y1="152" x2="47" y2="127" stroke="var(--navy)" stroke-width="2" marker-end="url(#mwNav)"></line>'
+  + '<text x="64" y="161" font-size="15" fill="var(--ink)" text-anchor="end">W</text>'
+  + '<circle cx="246" cy="156" r="4.5" fill="var(--navy)"></circle>'
+  + '<line x1="172" y1="272" x2="323" y2="272" stroke="#e07b24" stroke-width="2.2" marker-start="url(#mwOrg)" marker-end="url(#mwOrg)"></line>'
+  + '<text x="247" y="261" font-size="15" font-weight="700" fill="#e07b24" text-anchor="middle">Surplus</text>'
+  + '<text x="172" y="311" font-size="15" fill="var(--ink)" text-anchor="middle">Qd</text>'
+  + '<text x="246" y="311" font-size="15" fill="var(--ink)" text-anchor="middle">Q</text>'
+  + '<text x="323" y="311" font-size="15" fill="var(--ink)" text-anchor="middle">Qs</text>'
+  + '</svg>';
+}
+var DIAGRAMS = [
+  { title: 'Minimum wage', svg: minWageSVG(), b: [
+    'The equilibrium wage rate is W. Introducing a minimum wage rate increases the wage rate to Wmin.',
+    'At this higher wage rate, employers will only employ Qd workers yet Qs workers are willing to work.',
+    'Those who are employed will get more pay but at the cost of fewer jobs being available.',
+    'This unemployment is shown by Qs − Qd.'
+  ] }
+];
+var TEACHER_CODE = 'karin2026';
+var gatePending = null;
+var teacherGate = document.getElementById('teacherGate');
+var tgPass = document.getElementById('tgPass');
+var tgMsg = document.getElementById('tgMsg');
+function closeGate(){
+  gatePending = null;
+  teacherGate.style.display = 'none';
+  tgPass.value = '';
+  tgMsg.style.display = 'none';
+}
+function askTeacher(action){
+  gatePending = action;
+  tgPass.value = '';
+  tgMsg.style.display = 'none';
+  teacherGate.style.display = 'block';
+  tgPass.focus();
+}
+document.getElementById('tgCancel').onclick = closeGate;
+document.getElementById('tgOk').onclick = function(){
+  if (tgPass.value === TEACHER_CODE) {
+    var act = gatePending;
+    closeGate();
+    if (act) act();
+  } else {
+    tgMsg.style.display = 'block';
+    tgPass.value = '';
+    tgPass.focus();
+  }
+};
+tgPass.addEventListener('keydown', function(e){ if (e.key === 'Enter') { e.preventDefault(); document.getElementById('tgOk').click(); } });
+var editingKey = null;
+var editingTitle = '';
+var deleteArmed = false;
+function openEdit(it){
+  askTeacher(function(){
+    editingKey = it.ek;
+    editingTitle = it.t;
+    deleteArmed = false;
+    document.getElementById('efDelete').textContent = '删除 Delete';
+    document.getElementById('efTitle').textContent = '编辑定义 · ' + it.t;
+    document.getElementById('efTerm').value = it.t;
+    document.getElementById('efText').value = it.b ? it.b.join('\n') : it.d;
+    document.getElementById('editForm').style.display = 'block';
+    document.getElementById('editForm').scrollIntoView({behavior:'smooth', block:'nearest'});
+    document.getElementById('efText').focus();
+  });
+}
+document.getElementById('efCancel').onclick = function(){ document.getElementById('editForm').style.display = 'none'; editingKey = null; deleteArmed = false; document.getElementById('efDelete').textContent = '删除 Delete'; };
+document.getElementById('efSave').onclick = function(){
+  if (!editingKey) return;
+  var v = document.getElementById('efText').value;
+  var nt = document.getElementById('efTerm').value.trim() || editingTitle;
+  if (v.trim() === '') { delete edits[editingKey]; } else { edits[editingKey] = {d: v, t: nt}; }
+  saveEdits();
+  document.getElementById('editForm').style.display = 'none';
+  editingKey = null;
+  deleteArmed = false;
+  document.getElementById('efDelete').textContent = '删除 Delete';
+  render();
+};
+document.getElementById('efDelete').onclick = function(){
+  if (!editingKey) return;
+  if (!deleteArmed) {
+    deleteArmed = true;
+    this.textContent = '确认删除？';
+    return;
+  }
+  deleteArmed = false;
+  this.textContent = '删除 Delete';
+  deleted[editingKey] = 1;
+  delete edits[editingKey];
+  saveDeleted(); saveEdits();
+  document.getElementById('editForm').style.display = 'none';
+  editingKey = null;
+  render();
+};
+document.getElementById('restoreBtn').onclick = function(){
+  askTeacher(function(){
+    deleted = {};
+    saveDeleted();
+    render();
+  });
+};
+function buildAddChapters(){
+  var ao = document.getElementById('afAO').value;
+  var sel = document.getElementById('afCh');
+  sel.innerHTML = '';
+  DATA_BY_AO[ao].forEach(function(s){ var o = document.createElement('option'); o.value = s.ch; o.textContent = s.ch; sel.appendChild(o); });
+}
+document.getElementById('addDefBtn').onclick = function(){
+  askTeacher(function(){
+    document.getElementById('afAO').value = currentAO;
+    buildAddChapters();
+    document.getElementById('afTitle').value = '';
+    document.getElementById('afText').value = '';
+    document.getElementById('afMsg').textContent = '新定义会加到所选章节的最后。保存后只在你自己的浏览器里生效，点工具栏「⬇ 导出 HTML」下载新文件，上传到你的网站后学生才能看到。';
+    document.getElementById('addForm').style.display = 'block';
+    document.getElementById('addForm').scrollIntoView({behavior:'smooth', block:'nearest'});
+    document.getElementById('afTitle').focus();
+  });
+};
+document.getElementById('afAO').onchange = buildAddChapters;
+document.getElementById('afCancel').onclick = function(){ document.getElementById('addForm').style.display = 'none'; };
+document.getElementById('afSave').onclick = function(){
+  var ao = document.getElementById('afAO').value;
+  var ch = document.getElementById('afCh').value;
+  var t = document.getElementById('afTitle').value.trim();
+  var lines = document.getElementById('afText').value.split('\n').map(function(s){ return s.trim(); }).filter(function(s){ return s; });
+  if (!t || !lines.length) { document.getElementById('afMsg').textContent = '请先填写标题和定义。'; return; }
+  var entry = {ao: ao, ch: ch, t: t};
+  if (lines.length > 1) { entry.b = lines; } else { entry.d = lines[0]; }
+  added.push(entry);
+  saveAdded();
+  document.getElementById('addForm').style.display = 'none';
+  if (ao !== currentAO) { setAO(ao); }
+  chsel.value = ch;
+  render();
+};
+function buildExportHtml(){
+  var safe = JSON.stringify({edits: edits, deleted: Object.keys(deleted), added: added}).replace(/</g, '\\u003c');
+  var html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  var startTag = '<script id="teacher-edits" type="application/json">';
+  var i0 = html.indexOf(startTag);
+  if (i0 >= 0) {
+    var endTag = '</scr' + 'ipt>';
+    var i1 = html.indexOf(endTag, i0);
+    if (i1 >= 0) { html = html.slice(0, i0) + startTag + safe + endTag + html.slice(i1 + endTag.length); }
+  }
+  return html;
+}
+document.getElementById('dlBtn').onclick = function(){
+  askTeacher(function(){
+    var blob = new Blob([buildExportHtml()], {type: 'text/html;charset=utf-8'});
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'as-definitions-flashcards.html';
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  });
+};
+document.getElementById('openBtn').onclick = function(){
+  askTeacher(function(){
+    var blob = new Blob([buildExportHtml()], {type: 'text/html;charset=utf-8'});
+    var url = URL.createObjectURL(blob);
+    window.open(url, '_blank');
+    setTimeout(function(){ URL.revokeObjectURL(url); }, 60000);
+  });
+};
+document.getElementById('shareBtn').onclick = function(){
+  askTeacher(function(){
+    var file = new File([buildExportHtml()], 'as-definitions-flashcards.html', {type: 'text/html'});
+    if (navigator.canShare && navigator.canShare({files: [file]})) {
+      navigator.share({files: [file]}).catch(function(){});
+    }
+  });
+};
+(function(){
+  try {
+    var f = new File([''], 't.html', {type: 'text/html'});
+    if (navigator.canShare && navigator.canShare({files: [f]})) {
+      document.getElementById('shareBtn').style.display = '';
+    }
+  } catch(e) {}
+})();
+function renderDiagrams(){
+  var wrap = document.getElementById('diagList'); wrap.innerHTML = '';
+  var q = document.getElementById('q').value.trim().toLowerCase();
+  var shown = 0;
+  DIAGRAMS.forEach(function(dg, idx){
+    if (q) {
+      var hay = (dg.title + ' ' + (dg.b || []).join(' ')).toLowerCase();
+      if (hay.indexOf(q) < 0) return;
+    }
+    shown++;
+    var card = document.createElement('div'); card.className = 'diag-card';
+    var head = document.createElement('div'); head.className = 'diag-head';
+    var h = document.createElement('h3'); h.textContent = dg.title;
+    var del = document.createElement('button'); del.type = 'button'; del.className = 'diag-del'; del.textContent = '删除 Delete';
+    del.onclick = (function(i){ return function(){ askTeacher(function(){ DIAGRAMS.splice(i, 1); renderDiagrams(); }); }; })(idx);
+    head.appendChild(h); head.appendChild(del);
+    card.appendChild(head);
+    var grid = document.createElement('div'); grid.className = 'diag-grid';
+    var fig = document.createElement('figure'); fig.className = 'diag-fig';
+    if (dg.svg) { fig.innerHTML = dg.svg; }
+    else if (dg.img) { var im = document.createElement('img'); im.src = dg.img; im.alt = dg.title; fig.appendChild(im); }
+    grid.appendChild(fig);
+    var ul = document.createElement('ul'); ul.className = 'bullets';
+    (dg.b || []).forEach(function(x){ var li = document.createElement('li'); li.textContent = x; ul.appendChild(li); });
+    grid.appendChild(ul);
+    card.appendChild(grid);
+    wrap.appendChild(card);
+  });
+  if (!shown) { wrap.innerHTML = '<div class="nores">' + (DIAGRAMS.length ? '没有找到匹配的图表，换个关键词试试。' : '还没有图表。点右上角「＋ Add diagram」添加第一张。') + '</div>'; }
+}
+function enterDiagram(){
+  if (diagramActive) return;
+  diagramActive = true;
+  document.getElementById('tabAO1').classList.remove('active');
+  document.getElementById('tabAO2').classList.remove('active');
+  document.getElementById('tabAO1').setAttribute('aria-selected', 'false');
+  document.getElementById('tabAO2').setAttribute('aria-selected', 'false');
+  document.getElementById('tabDiagram').classList.add('active');
+  document.getElementById('tabDiagram').setAttribute('aria-selected', 'true');
+  document.getElementById('listView').style.display = 'none';
+  document.getElementById('cardView').style.display = 'none';
+  document.getElementById('selftest').style.display = 'none';
+  document.getElementById('diagramView').style.display = 'block';
+  renderDiagrams();
+}
+document.getElementById('tabDiagram').onclick = enterDiagram;
+var diagForm = document.getElementById('diagForm');
+document.getElementById('addDiagBtn').onclick = function(){ askTeacher(function(){ diagForm.style.display = diagForm.style.display === 'none' ? 'block' : 'none'; }); };
+document.getElementById('dfCancel').onclick = function(){ diagForm.style.display = 'none'; };
+document.getElementById('dfSave').onclick = function(){
+  var title = document.getElementById('dfTitle').value.trim() || 'Untitled diagram';
+  var lines = document.getElementById('dfBullets').value.split('\n').map(function(s){ return s.trim(); }).filter(function(s){ return s; });
+  var fileIn = document.getElementById('dfFile');
+  function finish(img){
+    var entry = { title: title, b: lines };
+    if (img) entry.img = img;
+    DIAGRAMS.push(entry);
+    document.getElementById('dfTitle').value = '';
+    document.getElementById('dfBullets').value = '';
+    fileIn.value = '';
+    diagForm.style.display = 'none';
+    renderDiagrams();
+  }
+  if (fileIn.files && fileIn.files[0]) {
+    var rd = new FileReader();
+    rd.onload = function(){ finish(rd.result); };
+    rd.onerror = function(){ finish(null); };
+    rd.readAsDataURL(fileIn.files[0]);
+  } else { finish(null); }
+};
+renderDiagrams();
+render();
+</script>
+</body>
+</html>
